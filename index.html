@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for better compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive for different screen sizes -->
+    
+    <title>MT Cars Fetch</title> <!-- The title that appears in the browser tab -->
+    
+    <!-- Linking the CSS file for styling -->
+    <link rel="stylesheet" href="mt_style.css"> 
+</head>
+<body>
+    
+    <h1>MT Cars Data</h1> 
+
+    <!-- Buttons to trigger different methods of fetching data -->
+    <button onclick="fetchWithCallbacks()">Callback</button> <!-- Calls fetchWithCallbacks() function when clicked -->
+    <button onclick="fetchWithPromises()">Promises</button> <!-- Calls fetchWithPromises() function when clicked -->
+    <button onclick="fetchWithAsyncAwait()">Async/Await</button> <!-- Calls fetchWithAsyncAwait() function when clicked -->
+
+    <!-- Div to display the fetched data -->
+    <div id="output"></div> <!-- This will display the fetched data or result -->
+
+    <!-- Linking a js file containing the logic for data fetching -->
+    <script src="fetch_functions.js"></script> 
+</body>
+</html>
